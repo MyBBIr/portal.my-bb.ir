@@ -1,8 +1,6 @@
-/* HTML5 ✰ Boilerplate
+/* HTML5 âœ° Boilerplate
  * ==|== normalize ==========================================================
  */
-
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
@@ -11,7 +9,7 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
 body { margin: 0; font-size: 14px; line-height: 1.7; }
-body, button, input, select, textarea { font-family: "Open Sans", "Lucida Grande", Tahoma, "Trebuchet MS", Verdana, Arial, sans-serif; color: #222; }
+body, button, input, select, textarea { font-family: Tahoma, "Trebuchet MS", Verdana, Arial, sans-serif; color: #222; }
 
 ::-moz-selection { background: #f8891f; background: #ff7500; color: #fff; text-shadow: none; }
 ::selection { background: #f8891f; background: #ff7500; color: #fff; text-shadow: none; }
@@ -37,8 +35,8 @@ small { font-size: 85%; }
 sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
-ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
-dd { margin: 0 0 0 40px; }
+ul, ol { margin: 1em 0; padding: 0 40px 0 0; }
+dd { margin: 0 40px 0 0; }
 nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
 img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
 svg:not(:root) { overflow: hidden; }
@@ -47,7 +45,7 @@ figure { margin: 0; }
 form { margin: 0; }
 fieldset { border: 0; margin: 0; padding: 0; }
 label { cursor: pointer; }
-legend { border: 0; *margin-left: -7px; padding: 0; }
+legend { border: 0; *margin-right: -7px; padding: 0; }
 button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; outline: 0; }
 button, input { line-height: normal; *overflow: visible; }
 table button, table input { *overflow: auto; }
@@ -86,8 +84,8 @@ h1, h2, h3, h4, h5, h6 {
 #disclaimer h1 {
 	font-size: 1.1em;
 	text-transform: uppercase;
-	float: left;
-	margin: 0 15px 0 0 ;
+	float: right;
+	margin: 0 0 0 15px;
 	color: #c00;
 }
 
@@ -102,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
 
 div#container {
 	/* fix for mysterious overflow disappearing background issue */
-	float: left;
+	float: right;
 	display: inline-block;
 	min-width: 100%;
 }
@@ -114,7 +112,7 @@ div#container {
 }
 
 #main {
-	background: #fafafa url(../images/p4a.png);
+	background: #fafafa url(http://www.mybb.com/assets/images/p4a.png);
 }
 
 #main > .wrapper,
@@ -123,8 +121,8 @@ div#container {
 	padding: 25px;
 	padding: 30px 40px;
 	width: 940px;
-	border-left: 1px solid #ddd;
 	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
 }
 
 .wrapper:before, .wrapper:after { content: " "; display: table; }
@@ -133,7 +131,7 @@ div#container {
 
 header#pageHeader {
 	border-bottom: 4px solid #3a3a3a;
-	text-align: right;
+	text-align: left;
 }
 
 header#pageHeader:before, header#pageHeader:after { content: " "; display: table; }
@@ -142,13 +140,13 @@ header#pageHeader { *zoom: 1; }
 
 /* Logo */
 nav#logoLink a {
-	float: left;
+	float: right;
 	width: 255px;
 	height: 65px;
-	text-align: left;
+	text-align: right;
 	text-indent: -999em;
-	background: url("../images/logo.png") no-repeat;
-	margin: 15px 0 0 -10px;
+	background: url("http://www.mybb.com/assets/images/logo.png") no-repeat;
+	margin: 15px -10px 0 0;
 	display: block;
 	position: relative;
 }
@@ -157,9 +155,9 @@ nav#logoLink a {
 nav#mainMenu {
 	margin-bottom: -4px;
 	font-size: 1.1em;
-	clear: right;
+	clear: left;
 	position: relative;
-	margin-left: 255px;
+	margin-right: 255px;
 }
 
 nav#mainMenu ul li {
@@ -186,7 +184,7 @@ nav#mainMenu ul li.selected a {
 
 /* Site search */
 #siteSearch {
-	float: right;
+	float: left;
 	margin: 18px 0 14px 0;
 }
 
@@ -196,7 +194,7 @@ nav#mainMenu ul li.selected a {
 	-moz-border-radius: 6px;
 	-webkit-border-radius: 6px;
 	border-radius: 6px;
-	padding: 1px 1px 1px 5px;
+	padding: 1px 5px 1px 1px;
 	cursor: text;
 }
 
@@ -214,7 +212,7 @@ nav#mainMenu ul li.selected a {
   margin: 0;
   padding: 0;
   border: 0;
-  background: url("../images/search.png") no-repeat 4px 4px;
+  background: url("http://www.mybb.com/assets/images/search.png") no-repeat 4px 4px;
   text-indent: -1000em;
   cursor: pointer; /* hand-shaped cursor */
   cursor: hand; /* for IE 5.x */
@@ -229,7 +227,7 @@ nav#mainMenu ul li.selected a {
 	position:relative;
 	background: #555555;
 	background: -moz-linear-gradient(top,  #555555 0%, #333333 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#555555), color-stop(100%,#333333));
+	background: -webkit-gradient(linear, right top, right bottom, color-stop(0%,#555555), color-stop(100%,#333333));
 	background: -webkit-linear-gradient(top,  #555555 0%,#333333 100%);
 	background: -o-linear-gradient(top,  #555555 0%,#333333 100%);
 	background: -ms-linear-gradient(top,  #555555 0%,#333333 100%);
@@ -271,8 +269,8 @@ nav#mainMenu ul li.selected a {
 /* Page sidebar */
 #sidebar {
 	width: 250px;
-	margin-left: 30px;
-	float: right;
+	margin-right: 30px;
+	float: left;
 }
 
 #sidebar section {
@@ -301,7 +299,7 @@ nav#mainMenu ul li.selected a {
 #sidebar section nav ul li a {
 	text-decoration: none;
 	display: block;
-	padding: 5px 0 5px 5px;
+	padding: 5px 5px 5px 0;
 	border-bottom: 1px solid #f3e18e;
 }
 
@@ -319,7 +317,7 @@ nav#mainMenu ul li.selected a {
 
 #sidebar section > ul li {
 	display: block;
-	padding: 5px 0 5px 5px;
+	padding: 5px 5px 5px 0;
 	border-bottom: 1px solid #f3e18e;
 }
 
@@ -440,7 +438,7 @@ section.form input[type="submit"] {
 	color: #fff;
 	background: #0070b9; /* Old browsers */
 	background: -moz-linear-gradient(top, #0070b9 0%, #005084 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0070b9), color-stop(100%,#005084)); /* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, right top, right bottom, color-stop(0%,#0070b9), color-stop(100%,#005084)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top, #0070b9 0%,#005084 100%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(top, #0070b9 0%,#005084 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #0070b9 0%,#005084 100%); /* IE10+ */
@@ -457,7 +455,7 @@ section.form input[type="submit"] {
 section.form input[type="submit"]:hover {
 	background: #ff7500; /* Old browsers */
 	background: -moz-linear-gradient(top, #ff7500 0%, #db6200 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff7500), color-stop(100%,#db6200)); /* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, right top, right bottom, color-stop(0%,#ff7500), color-stop(100%,#db6200)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top, #ff7500 0%,#db6200 100%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(top, #ff7500 0%,#db6200 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #ff7500 0%,#db6200 100%); /* IE10+ */
@@ -558,15 +556,15 @@ nav.pagination ul li a {
 }
 
 nav.pagination ul li.previousPage {
-	float: left;
-	width: 100px;
-	text-align: left;
-}
-
-nav.pagination ul li.nextPage {
 	float: right;
 	width: 100px;
 	text-align: right;
+}
+
+nav.pagination ul li.nextPage {
+	float: left;
+	width: 100px;
+	text-align: left;
 }
 
 /* Tables */
@@ -588,7 +586,7 @@ table.standard_table thead th {
 	font-weight: normal;
 	letter-spacing: 1px;
 	font-size: 1em;
-	text-align: left;
+	text-align: right;
 }
 
 table.standard_table th {
@@ -601,7 +599,7 @@ table.standard_table thead th, table.standard_table th, table.standard_table td 
 
 table.standard_table th.row, table.standard_table td {
 	border-bottom: 1px solid #cdcdcd;
-	text-align: left;
+	text-align: right;
 }
 
 table.standard_table tr:nth-child(even) {
@@ -635,7 +633,7 @@ footer ul li {
 
 footer small {
 	font-size: 1em;
-	float: right;
+	float: left;
 	color: #666;
 }
 
@@ -655,28 +653,28 @@ ul#slider {
 }
 
 #mainFeature.home .panel1 .featureMascot {
-	background-image: url("../images/mascot.png");
-	background-position: top left;
+	background-image: url("http://www.mybb.com/assets/images/mascot.png");
+	background-position: top right;
 	background-repeat: no-repeat;
 	width: 185px;
 	height: 300px;
-	margin: 0 -185px 0 -50px;
-	float: left;
+	margin: 0 -50px 0 -185px;
+	float: right;
 }
 
 #mainFeature.home .panel1 .featureText {
 	width: 360px;
 	height: 280px;
-	padding: 20px 0 0 20px;
-	float: left;
+	padding: 20px 20px 0 0 ;
+	float: right;
 }
 
 #mainFeature.home .panel1 .featureScreenshot {
 	width: 425px;
 	height: 270px;
-	margin: 15px 0 0 60px;
-	background: #fff url("../images/home/feature_1.png") 0 0 no-repeat;
-	float: left;
+	margin: 15px 60px 0 0;
+	background: #fff url("http://www.mybb.com/assets/images/home/feature_1.png") top right no-repeat;
+	float: right;
 }
 
 #mainFeature.home p.description {
@@ -694,7 +692,7 @@ ul#slider {
 	color: #fff;
 	background: #0070b9; /* Old browsers */
 	background: -moz-linear-gradient(top, #0070b9 0%, #005084 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0070b9), color-stop(100%,#005084)); /* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, right top, right bottom, color-stop(0%,#0070b9), color-stop(100%,#005084)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top, #0070b9 0%,#005084 100%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(top, #0070b9 0%,#005084 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #0070b9 0%,#005084 100%); /* IE10+ */
@@ -702,7 +700,7 @@ ul#slider {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0070b9', endColorstr='#005084',GradientType=0 ); /* IE6-9 */
 	border: 1px solid #333;
 	padding: 10px 20px;
-	margin-right: 10px;
+	margin-left: 10px;
 	font-size: 1.3em;
 	-moz-border-radius: 6px;
 	-webkit-border-radius: 6px;
@@ -713,7 +711,7 @@ ul#slider {
 #mainFeature.home p.links a.download:hover {
 	background: #ff7500; /* Old browsers */
 	background: -moz-linear-gradient(top, #ff7500 0%, #db6200 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff7500), color-stop(100%,#db6200)); /* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, right top, right bottom, color-stop(0%,#ff7500), color-stop(100%,#db6200)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top, #ff7500 0%,#db6200 100%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(top, #ff7500 0%,#db6200 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #ff7500 0%,#db6200 100%); /* IE10+ */
@@ -722,7 +720,7 @@ ul#slider {
 }
 
 #mainFeature.home p.links a.learnMore {
-	margin-left: 5px;
+	margin-right: 5px;
 }
 
 #mainFeature.home .featureScreenshot,
@@ -736,62 +734,62 @@ ul#slider {
 }
 
 #mainFeature.home .panel2 div.featureText {
-	float: left;
+	float: right;
 	width: 450px;
-	margin: 40px 0 0 40px;
+	margin: 40px 40px 0 0;
 }
 
 #mainFeature.home .panel2 .featureScreenshotLarge {
 	width: 375px;
 	height: 250px;
-	margin: 15px 0 0 5px;
-	background: #fff url("../images/home/feature_2.png") 0 0 no-repeat;
-	float: left;
+	margin: 15px 5px 0 0;
+	background: #fff url("http://www.mybb.com/assets/images/home/feature_2.png") top right no-repeat;
+	float: right;
 }
 
 #mainFeature.home .panel2 .featureScreenshotSmall {
 	width: 275px;
 	height: 200px;
-	margin: 80px 0 0 -180px;
-	background: #fff url("../images/home/feature_3.png") -1px 0 no-repeat;
-	float: left;
+	margin: 80px -180px 0 0;
+	background: #fff url("http://www.mybb.com/assets/images/home/feature_3.png") -1px 0 no-repeat;
+	float: right;
 }
 
 
 #mainFeature.home .panel3 div.featureText {
-	float: left;
+	float: right;
 	width: 475px;
-	margin: 40px 30px 0 20px;
+	margin: 40px 20px 0 30px;
 }
 
 #mainFeature.home .panel3 .featureScreenshot {
 	width: 425px;
 	height: 270px;
-	margin: 15px 5px 0 0;
-	background: #fff url("../images/home/feature_4.png") -1px 0 no-repeat;
-	float: right;
+	margin: 15px 0 0 5px;
+	background: #fff url("http://www.mybb.com/assets/images/home/feature_4.png") -1px 0 no-repeat;
+	float: left;
 }
 
 #mainFeature.home .panel4 div.featureText {
-	float: left;
+	float: right;
 	width: 450px;
-	margin: 40px 0 0 40px;
+	margin: 40px 40px 0 0;
 }
 
 #mainFeature.home .panel4 .featureScreenshotLarge {
 	width: 375px;
 	height: 250px;
-	margin: 15px 0 0 100px;
-	background: #fff url("../images/home/customize_large.png") 0 0 no-repeat;
-	float: left;
+	margin: 15px 100px 0 0;
+	background: #fff url("http://www.mybb.com/assets/images/home/customize_large.png") top right no-repeat;
+	float: right;
 }
 
 #mainFeature.home .panel4 .featureScreenshotSmall {
 	width: 275px;
 	height: 200px;
-	margin: 80px 0 0 -460px;
-	background: #fff url("../images/home/customize_small.png") 0 0 no-repeat;
-	float: left;
+	margin: 80px -460px 0 0;
+	background: #fff url("http://www.mybb.com/assets/images/home/customize_small.png") top right no-repeat;
+	float: right;
 }
 
 #homeBody {
@@ -799,15 +797,15 @@ ul#slider {
 }
 
 #screenshotBlocks {
-	float: left;
+	float: right;
 	width: 450px;
-	padding: 0 22px 15px 0;
-	margin: 0 30px 0 -12px;
-	border-right: 1px solid #ddd;
+	padding: 0 0 15px 22px;
+	margin: 0 -12px 0 30px;
+	border-left: 1px solid #ddd;
 }
 
 #screenshotBlocks section {
-	float: left;
+	float: right;
 	width: 200px;
 	margin: 12px;
 }
@@ -866,7 +864,7 @@ aside#about {
 
 aside#about h1 {
 	font-size: 1.6em;
-	margin-right: 10px;
+	margin-left: 10px;
 	display: inline;
 }
 
@@ -885,11 +883,11 @@ aside#about section {
 }
 
 aside#about section h1 {
-	float: left;
+	float: right;
 	font-size: 1.1em;
-	padding-right: 15px;
-	margin-right: 15px;
-	border-right: 1px solid #038ae2;
+	padding-left: 15px;
+	margin-left: 15px;
+	border-left: 1px solid #038ae2;
 }
 
 aside#about ul {
@@ -900,7 +898,7 @@ aside#about ul {
 aside#about ul li {
 	list-style: none;
 	display: inline-block;
-	margin: 0 15px 0 0;
+	margin: 0 0 0 15px;
 }
 
 aside#about .social {
@@ -909,11 +907,11 @@ aside#about .social {
 
 aside#about .social div {
 	display: inline-block;
-	float: left;
+	float: right;
 }
 
 aside#about .social div.twitter {
-	margin-right: 11px;
+	margin-left: 11px;
 }
 
 /* Features */
@@ -933,20 +931,8 @@ aside#about .social div.twitter {
 	padding: 0 0 20px 0;
 }
 
-#mainFeature.features div.screenshots .smallScreenshotRight {
-	background: #fff url("../images/tour/home/small_screenshot_right.png");
-	float: right;
-	width: 250px;
-	height: 215px;
-	margin: -8px 0 0 0;
-	border: 0;
-	-webkit-box-shadow: #222 0 0 5px;
-	-moz-box-shadow: #222 0 0 5px;
-	box-shadow: #222 0 0 5px;
-}
-
-#mainFeature.features div.screenshots .smallScreenshotLeft {
-	background: #fff url("../images/tour/home/small_screenshot_left.png");
+#mainFeature.features div.screenshots .smallScreenshotleft {
+	background: #fff url("http://www.mybb.com/assets/images/tour/home/small_screenshot_left.png");
 	float: left;
 	width: 250px;
 	height: 215px;
@@ -957,8 +943,20 @@ aside#about .social div.twitter {
 	box-shadow: #222 0 0 5px;
 }
 
+#mainFeature.features div.screenshots .smallScreenshotright {
+	background: #fff url("http://www.mybb.com/assets/images/tour/home/small_screenshot_right.png");
+	float: right;
+	width: 250px;
+	height: 215px;
+	margin: -8px 0 0 0;
+	border: 0;
+	-webkit-box-shadow: #222 0 0 5px;
+	-moz-box-shadow: #222 0 0 5px;
+	box-shadow: #222 0 0 5px;
+}
+
 #mainFeature.features div.screenshots .largeScreenshot {
-	background: #fff url("../images/tour/home/large_screenshot.png");
+	background: #fff url("http://www.mybb.com/assets/images/tour/home/large_screenshot.png");
 	width: 480px;
 	height: 250px;
 	position: relative;
@@ -975,12 +973,12 @@ aside#about .social div.twitter {
 }
 
 .featurePages section {
-	float: left;
+	float: right;
 	width: 260px;
-	padding: 0 0 0 45px;
-	margin: 5px 10px 10px 15px;
+	padding: 0 45px 0 0;
+	margin: 5px 15px 10px 10px;
 	background-repeat: no-repeat;
-	background-position: top left;
+	background-position: top right;
 }
 
 .featurePages section p {
@@ -988,63 +986,63 @@ aside#about .social div.twitter {
 }
 
 .featurePages section.easeOfUse {
-	background-image: url("../images/tour/icons/ease_of_use.png");
+	background-image: url("http://www.mybb.com/assets/images/tour/icons/ease_of_use.png");
 }
 
 .featurePages section.pluginSystem {
-	background-image: url("../images/tour/icons/plugin_system.png");
+	background-image: url("http://www.mybb.com/assets/images/tour/icons/plugin_system.png");
 }
 
 .featurePages section.administration {
-	background-image: url("../images/tour/icons/administration.png");
+	background-image: url("http://www.mybb.com/assets/images/tour/icons/administration.png");
 }
 
 .featurePages section.moderation {
-	background-image: url("../images/tour/icons/moderation.png");
+	background-image: url("http://www.mybb.com/assets/images/tour/icons/moderation.png");
 }
 
 .featurePages section.templateThemeEditor {
-	background-image: url("../images/tour/icons/themes.png");
+	background-image: url("http://www.mybb.com/assets/images/tour/icons/themes.png");
 }
 
 .featurePages section.privateMessaging {
-	background-image: url("../images/tour/icons/private_messaging.png");
+	background-image: url("http://www.mybb.com/assets/images/tour/icons/private_messaging.png");
 }
 
 .featurePages section.threadsPostsPolls {
-	background-image: url("../images/tour/icons/threads.png");
+	background-image: url("http://www.mybb.com/assets/images/tour/icons/threads.png");
 }
 
 .featurePages section.calendarsEvents {
-	background-image: url("../images/tour/icons/calendar.png");
+	background-image: url("http://www.mybb.com/assets/images/tour/icons/calendar.png");
 }
 
 .featurePages section.reputation {
-	background-image: url("../images/tour/icons/reputation.png");
+	background-image: url("http://www.mybb.com/assets/images/tour/icons/reputation.png");
 }
 
 .featurePages section.userPromotions {
-	background-image: url("../images/tour/icons/users.png");
+	background-image: url("http://www.mybb.com/assets/images/tour/icons/users.png");
 }
 
 .featurePages section.warningSystem {
-	background-image: url("../images/tour/icons/warning.png");
+	background-image: url("http://www.mybb.com/assets/images/tour/icons/warning.png");
 }
 
 .featurePages section.massMail {
-	background-image: url("../images/tour/icons/mass_mail.png");
+	background-image: url("http://www.mybb.com/assets/images/tour/icons/mass_mail.png");
 }
 
 .featurePages section.taskScheduling {
-	background-image: url("../images/tour/icons/tasks.png");
+	background-image: url("http://www.mybb.com/assets/images/tour/icons/tasks.png");
 }
 
 .featurePages section.performance {
-	background-image: url("../images/tour/icons/performance.png");
+	background-image: url("http://www.mybb.com/assets/images/tour/icons/performance.png");
 }
 
 .featurePages section.DBMSsupport {
-	background-image: url("../images/tour/icons/db_support.png");
+	background-image: url("http://www.mybb.com/assets/images/tour/icons/db_support.png");
 }
 
 p.tourScreenshot {
@@ -1071,14 +1069,14 @@ div.tourNavigation a {
 }
 
 div.tourNavigation div.nextFeature {
-	float: right;
-	text-align: right;
+	float: left;
+	text-align: left;
 	min-width: 200px;
 }
 
 div.tourNavigation div.previousFeature {
-	float: left;
-	text-align: left;
+	float: right;
+	text-align: right;
 	min-width: 200px;
 }
 
@@ -1088,12 +1086,12 @@ div.tourNavigation div.currentFeature {
 
 /* Download */
 #mainFeature.download p.description {
-	float: left;
+	float: right;
 	width: 650px;
 }
 
 #mainFeature.download div.downloadBit {
-	float: right;
+	float: left;
 	text-align: center;
 	width: 300px;
 	margin-top: 40px;
@@ -1103,7 +1101,7 @@ div.tourNavigation div.currentFeature {
 	color: #fff;
 	background: #0070b9; /* Old browsers */
 	background: -moz-linear-gradient(top, #0070b9 0%, #005084 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0070b9), color-stop(100%,#005084)); /* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, right top, right bottom, color-stop(0%,#0070b9), color-stop(100%,#005084)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top, #0070b9 0%,#005084 100%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(top, #0070b9 0%,#005084 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #0070b9 0%,#005084 100%); /* IE10+ */
@@ -1111,7 +1109,7 @@ div.tourNavigation div.currentFeature {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0070b9', endColorstr='#005084',GradientType=0 ); /* IE6-9 */
 	border: 1px solid #333;
 	padding: 12px 20px;
-	margin-right: 10px;
+	margin-left: 10px;
 	font-size: 1.6em;
 	-moz-border-radius: 6px;
 	-webkit-border-radius: 6px;
@@ -1122,7 +1120,7 @@ div.tourNavigation div.currentFeature {
 #mainFeature.download div.downloadBit a.download:hover {
 	background: #ff7500; /* Old browsers */
 	background: -moz-linear-gradient(top, #ff7500 0%, #db6200 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff7500), color-stop(100%,#db6200)); /* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, right top, right bottom, color-stop(0%,#ff7500), color-stop(100%,#db6200)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top, #ff7500 0%,#db6200 100%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(top, #ff7500 0%,#db6200 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #ff7500 0%,#db6200 100%); /* IE10+ */
@@ -1131,8 +1129,8 @@ div.tourNavigation div.currentFeature {
 }
 
 aside#previousSeries div.downloadBit {
-	margin-left: auto;
 	margin-right: auto;
+	margin-left: auto;
 	text-align: center;
 	width: 300px;
 	margin-top: 20px;
@@ -1142,7 +1140,7 @@ aside#previousSeries div.downloadBit a.download {
 	color: #fff;
 	background: #0070b9; /* Old browsers */
 	background: -moz-linear-gradient(top, #0070b9 0%, #005084 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0070b9), color-stop(100%,#005084)); /* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, right top, right bottom, color-stop(0%,#0070b9), color-stop(100%,#005084)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top, #0070b9 0%,#005084 100%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(top, #0070b9 0%,#005084 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #0070b9 0%,#005084 100%); /* IE10+ */
@@ -1159,7 +1157,7 @@ aside#previousSeries div.downloadBit a.download {
 aside#previousSeries div.downloadBit a.download:hover {
 	background: #ff7500; /* Old browsers */
 	background: -moz-linear-gradient(top, #ff7500 0%, #db6200 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff7500), color-stop(100%,#db6200)); /* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, right top, right bottom, color-stop(0%,#ff7500), color-stop(100%,#db6200)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top, #ff7500 0%,#db6200 100%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(top, #ff7500 0%,#db6200 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #ff7500 0%,#db6200 100%); /* IE10+ */
@@ -1177,7 +1175,7 @@ span.details {
 
 p.note {
 	background: #e6e6e6;
-	border-left: 8px solid #0185D9;
+	border-right: 8px solid #0185D9;
 	margin: 1.5em 10px;
 	padding: 0.5em 10px;
 }
@@ -1185,7 +1183,7 @@ p.note {
 article#download aside {
 	background: #f7f3c7;
 	border: 1px solid #f9d25f;
-	float: left;
+	float: right;
 	width: 428px;
 	padding: 10px 15px 12px;
 	margin: -5px 0 30px;
@@ -1206,23 +1204,23 @@ article#download aside#gettingStarted {
 }
 
 article#download aside#connect {
-	margin-right: 20px;
+	margin-left: 20px;
 }
 
 article#download aside#connect p {
 	display: inline;
-	margin-left: 10px;
+	margin-right: 10px;
 	color: #777;
 }
 
 article#download aside#connect .facebook {
-	float: left;
-	margin: 0 0 -5px -10px;
+	float: right;
+	margin: 0 -10px -5px 0;
 }
 
 article#download aside#connect .twitter {
-	margin: 18px 0 0 20px;
-	float: left;
+	margin: 18px 20px 0 0;
+	float: right;
 }
 
 article#download aside#gettingStarted p {
@@ -1232,7 +1230,7 @@ article#download aside#gettingStarted p {
 
 article#download div.more section {
 	width: 270px;
-	float: left;
+	float: right;
 }
 
 article#download div.more section h1 {
@@ -1241,17 +1239,17 @@ article#download div.more section h1 {
 }
 
 article#download div.more section#mergeSystem {
-	padding-right: 30px;
+	padding-left: 30px;
 }
 
 article#download div.more section#translations {
-	border-left: 1px solid #ddd;
 	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
 	padding: 0 30px;
 }
 
 article#download div.more section#extendMyBB {
-	padding-left: 30px;
+	padding-right: 30px;
 }
 
 article #sidebar section.downloadBit.mergeSystem {
@@ -1265,7 +1263,7 @@ article #sidebar section.downloadBit.mergeSystem a.download {
 	color: #fff;
 	background: #0070b9; /* Old browsers */
 	background: -moz-linear-gradient(top, #0070b9 0%, #005084 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0070b9), color-stop(100%,#005084)); /* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, right top, right bottom, color-stop(0%,#0070b9), color-stop(100%,#005084)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top, #0070b9 0%,#005084 100%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(top, #0070b9 0%,#005084 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #0070b9 0%,#005084 100%); /* IE10+ */
@@ -1285,7 +1283,7 @@ article #sidebar section.downloadBit.mergeSystem a.download {
 article #sidebar section.downloadBit.mergeSystem a.download:hover {
 	background: #ff7500; /* Old browsers */
 	background: -moz-linear-gradient(top, #ff7500 0%, #db6200 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff7500), color-stop(100%,#db6200)); /* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, right top, right bottom, color-stop(0%,#ff7500), color-stop(100%,#db6200)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top, #ff7500 0%,#db6200 100%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(top, #ff7500 0%,#db6200 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #ff7500 0%,#db6200 100%); /* IE10+ */
@@ -1295,7 +1293,7 @@ article #sidebar section.downloadBit.mergeSystem a.download:hover {
 }
 
 article p.githubButtons {
-	float: right;
+	float: left;
 	margin-top: 2px;
 }
 
@@ -1312,7 +1310,7 @@ article #sidebar div.twitter {
 /* */
 
 /* ==|== non-semantic helper classes ======================================== */
-.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: right; direction: ltr; }
 .ir br { display: none; }
 .hidden { display: none !important; visibility: hidden; }
 .visuallyHidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
