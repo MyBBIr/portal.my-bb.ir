@@ -13,7 +13,7 @@
 		{{ page.title }} - {{ site.name }}
 		{% endif %}
 	</title>
-	<meta name="author" content="MyBB Group" />
+	<meta name="author" content="My-BB.Ir Group" />
 	{% if page.meta_description %}
 	<meta name="description" content="{{ page.meta_description }}" />
 	{% endif %}
@@ -47,7 +47,7 @@
 					<ul>
 						<li{% if page.section == "home" %} class="selected"{% endif %}><a href="{{ site.baseurl }}/">خانه</a></li>
 						<li{% if page.section == "features" %} class="selected"{% endif %}><a href="{{ site.baseurl }}/features/">ویژگی‌ها</a></li>
-						<li{% if page.section == "download" %} class="selected"{% endif %}><a href="https://releases.my-bb.ir">دریافت</a></li>
+						<li{% if page.section == "download" %} class="selected"{% endif %}><a href="{{ site.download_url }}">دریافت</a></li>
 <!-- 						<li><a href="http://community.mybb.com" title="Community">انجمن</a></li> -->
 						<li{% if page.section == "get-involved" %} class="selected"{% endif %}><a href="{{ site.baseurl }}/get-involved/" title="Get Involved">مشارکت</a></li>
 						<li><a href="http://community.mybb.com/mods.php" title="Extend">توسعه</a></li>
